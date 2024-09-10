@@ -1,35 +1,19 @@
-# Audio/Video Transcription with Whisper and FFmpeg
+# Audio/Video Field Recordings Automation
 Bash Script: MP3 to Text Conversion with Whisper
 
+Welcome to the Audio/Video Field Recordings Automation repository! This project is designed to streamline and automate the process of logging and categorizing audio and video recordings. Built with tools like ffmpeg, shell scripting, and Whisper, it provides a range of features to enhance your recording workflow.
 
-This Bash script automates the process of transcribing audio and video files using OpenAI's Whisper model. It supports various audio/video formats, converts non-MP3 files to MP3 using FFmpeg, and generates subtitles in .srt format.
+Features
+Transcription
 
-Features:
+Convert audio/video files to text (TXT) or SubRip Subtitle (SRT) files.
+Detect multiple languages and translate transcriptions as needed.
+Ideal for quickly reading summaries of interviews or meetings instead of listening to lengthy recordings.
+Burnt-In Transcriptions
 
-Input Directory: Prompts the user to specify the folder containing audio/video files.
+Create video transcriptions embedded directly on a smaller copy of the video.
+Makes it easy to reference spoken content directly from the video.
+Smart File Naming
 
-Output Directory: Prompts the user to specify the folder where the transcriptions will be saved.
-
-Supported Formats: Automatically processes files with extensions .mp4, .wav, .flac, .mp3, .amr, and .m4a.
-
-File Conversion: Converts non-MP3 files (e.g., .mp4, .wav) to temporary MP3 files using FFmpeg.
-
-Whisper Integration: Runs Whisper for transcription with English language support and outputs .srt subtitle files.
-
-Multithreading: Utilizes up to 4 threads for faster processing.
-
-Automatic Directory Creation: Creates the output directory if it doesn’t already exist.
-
-Prerequisites:
-
-FFmpeg: Ensure FFmpeg is installed for audio conversion.
-
-Whisper: Install the Whisper model via Whisper GitHub.
-
-Usage:
-
-Clone the repository or copy the script.
-
-Ensure FFmpeg and Whisper are installed.
-
-Run the script and provide the input/output directories as prompted.
+Automatically rename files based on custom phrases (e.g., 'take number', 'the date', 'my name is').
+Simplifies organization for multi-camera and audio shoots, especially when files are not in any particular order.
